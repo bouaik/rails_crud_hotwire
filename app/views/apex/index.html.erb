@@ -1,5 +1,15 @@
-<div>
+<div
+  data-controller="hello"
+>
   <%= turbo_stream_from :apex %>
   <h1>Applicant Tracking System Dashboard</h1>
+  <%= select_tag "Centry",
+      options_for_select(
+        [["20 century", 20], ["21 centery", 21]]
+      ),
+      include_blank: "All jobs",
+      data: {
+        action: "change->hello#update"
+      } %>
   <%= render "updated_data", data: @data , categories: @categories %>
 </div>

@@ -37,7 +37,5 @@ export default class extends Controller {
 
   async update(e) {
     const res = await get(`/apex_update/${e.target.value}`)
-
-    console.log(res)
   }
 }

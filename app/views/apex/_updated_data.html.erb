@@ -5,13 +5,5 @@
   data-pie-chart-categories-value="<%= categories %>"
   class="border p-2"
 >
-  <%= select_tag "Centry",
-      options_for_select(
-        [["20 century", 20], ["21 centery", 21]]
-      ),
-      include_blank: "All jobs",
-      data: {
-        action: "change->pie-chart#update"
-      } %>
   <div data-pie-chart-target="chart"></div>
 </div>
