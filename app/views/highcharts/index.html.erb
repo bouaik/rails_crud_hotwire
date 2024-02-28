@@ -1,0 +1,14 @@
+ <div
+  data-controller="hello"
+>
+  <%= turbo_stream_from :high %>
+  <h1>Applicant Tracking System Dashboard</h1>
+  <%= select_tag "Centry",
+      options_for_select(
+        [["1990", 1990], ["2000", 2000], ["2010", 2010]]
+      ),
+      data: {
+        action: "change->hello#updateHigh"
+      } %>
+  <%= render "updated_data", name: @name , data: @data %>
+</div>

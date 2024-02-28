@@ -7,3 +7,4 @@ pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "apexcharts" # @3.46.0
 pin "@rails/request.js", to: "@rails--request.js.js" # @0.0.9
+pin "highcharts" # @11.3.0
