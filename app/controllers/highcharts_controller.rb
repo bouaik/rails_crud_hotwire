@@ -9,7 +9,7 @@ class HighchartsController < ApplicationController
     if params[:id].to_i == 1990
       @name = "Year 1990"
       @data = [631, 727, 3202, 721]
-    elsif params[:id].to_i == 2010
+    elsif params[:id].to_i == 2000
       @name = "Year 2000"
       @data = [814, 841, 3714, 726]
     else
