@@ -1,8 +1,8 @@
 class ApexController < ApplicationController
   def index
-    @data = [30,40,35,50,49,60,70,91,20]
+    @data = Application.pluck(:count)
 
-    @categories = [1990,1991,1992,1993,1994,1995,1996,1997, 1998, 1999]
+    @categories = Application.pluck(:year)
   end
 
 

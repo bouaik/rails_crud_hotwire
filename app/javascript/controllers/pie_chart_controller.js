@@ -20,8 +20,8 @@ export default class extends Controller {
     return {
       chart: {
         type: "line",
-        height: "400px",
-        width: "400px"
+        height: 400,
+        width: 800
       },
       series: [
         {
